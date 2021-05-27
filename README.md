@@ -13,12 +13,11 @@ npm run dev
 
 ## 🚧 Plugin Details - WIP 🚧
 
-
-> This plugin generates utility classes for sequencing animations with Tailwind classes as well as animation duration utilities
+This plugin generates utility classes for sequencing animations with Tailwind classes as well as animation duration utilities
 
 ### Example of classes generated 🙂
 
-```
+```html
 <div>
  <p class="animate-fade-in">I animate at the <strong>immediately</strong>, or first step in the sequence</p>
  <p class="animate-fade-in-2">I animate at the <strong>second</strong> step in the sequence</p>
@@ -29,7 +28,7 @@ npm run dev
 
 ### Example tailwind.config.js ⚙️
 
-```
+```javascript
 // tailwind.config.js
 module.exports = {
   theme: {
@@ -76,7 +75,7 @@ Using the above config's sequence array, you will have:
 
 This is the function in the plugin that generates the utilities:
 
-```
+```javascript
 const makeAnimationSequenceUtilities = (keyframes, options, sequence) => {
   const animations = {};
   const animationValues = [];
@@ -107,7 +106,7 @@ const makeAnimationSequenceUtilities = (keyframes, options, sequence) => {
 
 ### Animation Duration Utilities ⏰
 
-> This plugin also generates animation duration utilities. Right now, these are generated based on the transitionDuration values
+This plugin also generates animation duration utilities. Right now, these are generated based on the transitionDuration values
 
 So, if using the default TW transitionDuration config, you will have these available:
 
