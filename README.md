@@ -2,7 +2,7 @@
 
 ## Demo
 
-[View the demo](https://tailwindcss-animation-sequencing-plugin-demo.vercel.app/)
+[View the demo](https://tailwindcss-animation-sequencing-plugin-demo.vercel.app/) to see a basic example.
 
 ## How to use
 
@@ -11,9 +11,15 @@ npm install
 npm run dev
 ```
 
-## 🚧 Plugin Details - WIP 🚧
+## 🚧 Plugin Details 🚧
 
-This plugin generates utility classes for sequencing animations with Tailwind classes as well as animation duration utilities
+### Purpose
+Often times while animating web layouts, there's a need for sequencing/staggering the animations. While trivial with Javascript or CSS Custom Properties, I wanted a utility first approach to quickly put together my timing sequence, define keyframes, and access the "steps" in the sequence using native Tailwindcss.
+
+This plugin generates utility classes for sequencing animations with Tailwind classes as well as animation duration utilities. It acts as an extension of the native animation APIs surfaced via Tailwind's config, and allows a more robust set of animation utilities than hand-writing a long list of animation vaules, per the usual use case cited in Tailwind's docs.
+
+To generate a 5 step animation sequence, with stepped control over durations, would take a sigificant number of custom animation definitions in your TW config. With this plugin, all of those variations and sequencing is generated for you.
+
 
 ### Example of classes generated 🙂
 
