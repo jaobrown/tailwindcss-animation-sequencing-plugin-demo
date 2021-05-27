@@ -70,11 +70,11 @@ Using the above config's sequence array, you will have:
 
 | Class | Outcome |
 |---|---|
-| `animate-slide-up`   | runs animation at `0s delay`   |
-| `animate-slide-up-2` | runs animation at `.25s delay` |
-| `animate-slide-up-3` | runs animation at `.50s delay` |
-| `animate-slide-up-4` | runs animation at `.75s delay` |
-| `animate-slide-up-5` | runs animation at `1s delay`   |
+| `animate-slide-up`   | `slide-up` animation runs with `0s delay`   |
+| `animate-slide-up-2` | `slide-up` animation runs with `.25s delay` |
+| `animate-slide-up-3` | `slide-up` animation runs with `.50s delay` |
+| `animate-slide-up-4` | `slide-up` animation runs with `.75s delay` |
+| `animate-slide-up-5` | `slide-up` animation runs with `1s delay`   |
 
 
 ### How classes are generated
@@ -112,9 +112,9 @@ const makeAnimationSequenceUtilities = (keyframes, options, sequence) => {
 
 ### Animation Duration Utilities ⏰
 
-This plugin also generates animation duration utilities. Right now, these are generated based on the transitionDuration values
+This plugin also generates animation duration utilities. Right now, these are generated based on the `transitionDuration` values
 
-So, if using the default TW transitionDuration config, you will have these available:
+So, if using the default TW `transitionDuration` config, you will have these classes available:
 
 | Class | Properties |
 |---|---|
