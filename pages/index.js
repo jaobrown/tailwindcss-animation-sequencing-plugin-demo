@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export default function Home() {
   return (
@@ -8,16 +8,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold animate-slide-up">
-          Welcome to{' '}
+      <main className="relative flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+        <div className="fixed top-0 right-0 p-6 z-10">
+          <button
+            className="flex items-center p-4 bg-white text-blue-600 font-semibold border focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white hover:bg-gray-100 rounded-xl"
+            onClick={() => window.location.reload()}
+          >
+            Run it again
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="ml-2 h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+              />
+            </svg>
+          </button>
+        </div>
+        <h1 className="mt-32 text-6xl font-bold animate-slide-up">
+          Welcome to{" "}
           <a className="text-blue-600" href="https://nextjs.org">
             Next.js!
           </a>
         </h1>
 
         <p className="mt-3 text-2xl animate-slide-up-2">
-          Get started by editing{' '}
+          Get started by editing{" "}
           <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
             pages/index.js
           </code>
@@ -73,10 +95,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
         </a>
       </footer>
     </div>
-  )
+  );
 }
