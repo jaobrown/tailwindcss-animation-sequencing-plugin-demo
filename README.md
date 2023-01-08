@@ -32,6 +32,10 @@ To generate a 5 step animation sequence, with stepped control over durations, wo
 </div>
 ```
 
+### Installation
+
+To use this plugin, copy [this file](https://github.com/jaobrown/tailwindcss-animation-sequencing-plugin-demo/blob/main/plugins/animation-sequencing.js) into your `plugins` folder
+
 ### Example tailwind.config.js ⚙️
 
 ```javascript
@@ -60,7 +64,8 @@ module.exports = {
         fillMode: "both",
       },
     },
-  }
+  },
+  plugins: [require("./plugins/animation-sequencing")],
 }
 ```
 
